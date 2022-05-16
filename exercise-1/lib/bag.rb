@@ -11,7 +11,18 @@ class Bag
   end
 
   def empty?
-    @empty
+    return false if @candies.length > 0
+    true
+  end
+
+  def add_candy(candy)
+    @candies.push(candy)
+  end
+
+  def contains?(type)
+    @candies.all? do |candy|
+      candy.type.include?(type)
+    end
   end
 
 end
