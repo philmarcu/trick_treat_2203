@@ -9,7 +9,7 @@ RSpec.describe Bag do
     expect(bag.empty?).to be true
   end
 
-  xit 'can count the candy in an empty bag' do
+  it 'can count the candy in an empty bag' do
     bag = Bag.new
 
     expect(Bag.new.count).to eq(0)
