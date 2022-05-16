@@ -1,7 +1,7 @@
 class Candy
 
   attr_reader :type
-  def initialize(type = "Skittles")
+  def initialize(type)
     @type = type
   end
 
